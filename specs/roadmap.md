@@ -26,7 +26,7 @@ Exit criteria: a fresh clone can run lint and tests locally with two commands.
 
 ## Phase 1 — Baseline CI
 
-**Status:** in progress
+**Status:** completed
 
 A `.github/workflows/ci.yml` workflow runs `ruff check` and `pytest` on every PR and push to `main`, using `uv` to install dependencies. This workflow stays green at all times — it is the canary for the repo's own health, separate from the deliberately broken fixture workflows.
 
@@ -34,7 +34,7 @@ Exit criteria: opening a PR runs the workflow and it passes against the Phase 0 
 
 ## Phase 2 — Fixture: dependency install failure
 
-**Status:** todo
+**Status:** completed
 
 A workflow that installs dependencies and runs tests. Green initially. Broken by pinning a non-existent or incompatible package version, so `uv sync` (or equivalent) fails before tests run.
 
