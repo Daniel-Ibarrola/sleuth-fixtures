@@ -1,0 +1,24 @@
+[project]
+name = "sleuth-fixtures"
+version = "0.1.0"
+description = "Deliberately-broken GitHub Actions fixtures used to test the sleuth CLI."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.6",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]

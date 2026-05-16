@@ -15,7 +15,7 @@ This gives `sleuth` both a last-known-green run and a current-broken run to comp
 
 ## Phase 0 — Bootstrap the Python project
 
-**Status:** todo
+**Status:** completed
 
 - `pyproject.toml` initialized with `uv`, targeting Python 3.13.
 - Dev dependencies: `pytest`, `ruff`.

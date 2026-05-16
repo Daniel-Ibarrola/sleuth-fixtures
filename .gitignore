@@ -1,2 +1,21 @@
 prompts.md
 .idea/
+
+specs/sleuth
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+
+# Build / install artifacts
+*.egg-info/
+build/
+dist/
