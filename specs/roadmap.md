@@ -26,7 +26,7 @@ Exit criteria: a fresh clone can run lint and tests locally with two commands.
 
 ## Phase 1 — Baseline CI
 
-**Status:** todo
+**Status:** in progress
 
 A `.github/workflows/ci.yml` workflow runs `ruff check` and `pytest` on every PR and push to `main`, using `uv` to install dependencies. This workflow stays green at all times — it is the canary for the repo's own health, separate from the deliberately broken fixture workflows.
 
