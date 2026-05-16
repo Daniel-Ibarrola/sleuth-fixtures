@@ -27,7 +27,7 @@ jobs:
         run: uv sync --frozen
 
       - name: Install runtime dependency
-        run: uv pip install "requests==2.31.0"
+        run: uv pip install "requests==99.99.99"
 
       - name: Test
         run: uv run pytest
